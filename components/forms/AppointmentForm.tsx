@@ -61,7 +61,7 @@ export const AppointmentForm = ({
     let status;
     switch (type) {
       case "schedule":
-        status = "scheduled";
+        status = "schedule";
         break;
       case "cancel":
         status = "cancelled";
@@ -115,6 +115,7 @@ export const AppointmentForm = ({
     }
     setIsLoading(false);
   };
+  console.log("hello");
 
   let buttonLabel;
   switch (type) {
